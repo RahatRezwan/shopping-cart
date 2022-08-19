@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Shopping Cart</title>
+
+        <!-- Style Sheet Link -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/9685b0b84c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1>My Shopping Cart</h1>
+        </header>
+
+        <main>
+            <section id="cart-section">
+                <!-- Phone Section Start -->
+                <div id="phone-section">
+                    <div class="product-details">
+                        <img class="product-image" src="images/product-1.png" alt="" />
+                        <h3>iPhone 11 128GB Black</h3>
+                    </div>
+                    <div class="item-selector">
+                        <div class="quantity-selector">
+                            <div id="phone-minus"><i class="fas fa-minus"></i></div>
+                            <input
+                                id="phone-quantity"
+                                class="quantity"
+                                type="number"
+                                name=""
+                                id=""
+                                value="1"
+                            />
+                            <div id="phone-plus"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="price-remove">
+                            <h3>$<span id="phone-price">1240</span></h3>
+                            <img src="images/remove.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Section Start -->
+                <div id="case-section">
+                    <div class="product-details">
+                        <img class="product-image" src="images/product-2.png" alt="" />
+                        <h3>iPhone Silicon Case - Black</h3>
+                    </div>
+                    <div class="item-selector">
+                        <div class="quantity-selector">
+                            <div id="case-minus"><i class="fas fa-minus"></i></div>
+                            <input
+                                id="case-quantity"
+                                class="quantity"
+                                type="number"
+                                name=""
+                                id=""
+                                value="1"
+                            />
+                            <div id="case-plus"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="price-remove">
+                            <h3>$<span id="case-price">59</span></h3>
+                            <img src="images/remove.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Total Section Start -->
+                <div id="total-section">
+                    <div class="total">
+                        <p>Subtotal :</p>
+                        <p>$ <span id="sub-total">1299</span></p>
+                    </div>
+                    <div class="total">
+                        <p>Tax :</p>
+                        <p>$ <span id="tax-amount">194.85</span></p>
+                    </div>
+                    <div class="total">
+                        <p>Total :</p>
+                        <p>$ <span id="final-total">1493.85</span></p>
+                    </div>
+                </div>
+                <div class="checkout"><button id="checkout-btn">Checkout</button></div>
+            </section>
+        </main>
+
+        <script src="js/utility.js"></script>
+        <script src="js/phone.js"></script>
+        <script src="js/case.js"></script>
+    </body>
+</html>
